@@ -66,8 +66,7 @@ ul.navigation {
     flex-wrap: nowrap; /* Prevent wrapping of items */
     gap: 10px; /* Add space between items */
     overflow-x: auto; /* Enable horizontal scrolling */
-    -webkit-overflow-scrolling: touch;
-    justify-content: center;
+    justify-content: flex-start;
    
 }
 
