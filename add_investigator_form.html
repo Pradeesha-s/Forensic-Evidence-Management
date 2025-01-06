@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Investigator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Investigator</h1>
+        <form action="add_investigator.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contact_info">Contact Info:</label>
+            <input type="text" id="contact_info" name="contact_info" required>
+
+            <label for="assigned_case">Assigned Case:</label>
+            <input type="text" id="assigned_case" name="assigned_case" required>
+
+            <input type="submit" value="Add Investigator">
+        </form>
+        <a href="index.html">Back to Home</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Evidence</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Evidence</h1>
+        <form action="add_evidence.php" method="post">
+            <label for="evidence_type">Evidence Type:</label>
+            <input type="text" id="evidence_type" name="evidence_type" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="collection_date">Collection Date:</label>
+            <input type="date" id="collection_date" name="collection_date" required>
+
+            <label for="storage_location">Storage Location:</label>
+            <input type="text" id="storage_location" name="storage_location" required>
+
+            <label for="case_id">Case ID:</label>
+            <input type="number" id="case_id" name="case_id" required>
+
+            <input type="submit" value="Add Evidence">
+        </form>
+        <a href="index.html">Back to Home</a>
+    </div>
+</body>
+</html>

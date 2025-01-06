@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Forensic Report</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Forensic Report</h1>
+        <form action="add_forensic_report.php" method="post">
+            <label for="report_date">Report Date:</label>
+            <input type="date" id="report_date" name="report_date" required>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="evidence_id">Evidence ID:</label>
+            <input type="number" id="evidence_id" name="evidence_id" required>
+
+            <label for="analysis_result">Analysis Result:</label>
+            <textarea id="analysis_result" name="analysis_result" rows="4" required></textarea>
+
+            <input type="submit" value="Add Report">
+        </form>
+        <a href="index.html">Back to Home</a>
+    </div>
+</body>
+</html>

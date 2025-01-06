@@ -1,0 +1,159 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Container */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Use Google Fonts */
+    background-color: black; /* Light blue background */
+    height: 100vh; /* Full screen height */
+    display: flex; /* Center content */
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow */
+    text-align: center;
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box; /* Include padding in width/height */
+    overflow: hidden; /* Prevent content from spilling out */
+}
+
+/* Banner Container */
+.banner-container {
+    position: relative; /* Create a positioning context for the text */
+    width: 100%;
+    max-height: 300px; /* Optional: Limit banner height */
+    overflow: hidden; /* Prevent text from spilling outside */
+    border-radius: 8px;
+}
+
+.banner {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image scales nicely */
+}
+
+/* Banner Text */
+.banner-text {
+    position: absolute; /* Position text over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for accurate centering */
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+    z-index: 1; /* Ensure text is on top */
+    padding: 10px;
+}
+
+/* Navigation Styles */
+ul.navigation {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of items */
+    gap: 10px; /* Add space between items */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch;
+    justify-content: center;
+   
+}
+
+#pad{
+    padding-left:105px ;
+}
+ul.navigation li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul.navigation a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px 15px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    width: 1500px; /* Make buttons consistent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul.navigation a:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-5px); /* Add hover effect */
+}
+
+.icon {
+    width: 40px; /* Icon size */
+    height: 40px;
+    margin-bottom: 8px;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
